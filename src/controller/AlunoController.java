@@ -66,6 +66,7 @@ public class AlunoController {
         alunosMap.put(aluno1.hashCode(), aluno1);
         alunosMap.put(aluno2.hashCode(), aluno2);
         System.out.println(alunosMap);
+        System.out.println("\nOrdem decrescente");
         alunos = alunos.stream()
                 .sorted(Comparator.comparing(Aluno::getId).reversed()).collect(Collectors.toList());
         System.out.println(alunos);
