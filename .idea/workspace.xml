@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3417c643-3a46-4cb7-9361-c535f530c538" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objetivo2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ContaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Associado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/AssociadoVip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ContaPoupanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ContaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ContaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +35,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/daniel/IdeaProjects/Objetivo1-Avaliacao"
+    "last_opened_file_path": "/home/daniel/IdeaProjects/Objetivo1-Avaliacao",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
@@ -77,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669586509850</updated>
-      <workItem from="1669586511755" duration="17132000" />
+      <workItem from="1669586511755" duration="20719000" />
     </task>
     <servers />
   </component>
@@ -100,7 +90,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/controller/ContaController.java</url>
-          <line>13</line>
+          <line>14</line>
           <properties class="controller.ContaController" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

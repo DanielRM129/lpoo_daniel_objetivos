@@ -1,6 +1,7 @@
 package controller;
 
 import model.Associado;
+import model.Conta;
 import model.ContaCorrente;
 import model.ContaPoupanca;
 
@@ -35,6 +36,14 @@ public class ContaController {
         System.out.println(a3);
 
         System.out.println("\nExercicio B");
+        List<Conta> contas = new ArrayList<>();
+        contas.add(cp1);
+        contas.add(cp2);
+        contas.add(cp3);
+        contas.add(cc1);
+        contas.add(cc2);
+        contas.add(cc3);
+
         List<ContaPoupanca> contaPoupancas = new ArrayList<>();
         contaPoupancas.add(cp1);
         contaPoupancas.add(cp2);
@@ -86,5 +95,12 @@ public class ContaController {
         contaCorrentes= contaCorrentes.stream()
                 .sorted(Comparator.comparing(ContaCorrente::getSaldo).reversed()).collect(Collectors.toList());
         System.out.println(contaCorrentes);
+        contaPoupancas= contaPoupancas.stream()
+                .sorted(Comparator.comparing(ContaPoupanca::getSaldo).reversed()).collect(Collectors.toList());
+        System.out.println(contaPoupancas);
+
+        Optional maior_saldo = contas.stream().max(Comparator.comparing(Conta::getSaldo));
+        System.out.println(maior_saldo);
+
     }
 }
