@@ -7,6 +7,7 @@ import model.ContaPoupanca;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -86,10 +87,13 @@ public class ContaController {
                 .sorted(Comparator.comparing(Associado::getNumeroCota).reversed()).collect(Collectors.toList());
         System.out.println(associados);
 
-        System.out.print("\n\nAssociado com maior número de cotas: ");
-
-        Optional a_maior_cota = associados.stream().max(Comparator.comparing(Associado::getNumeroCota));
-        System.out.println(a_maior_cota.get());
+        System.out.print("\n\nAssociado (s) com maior número de cotas: ");
+        Associado a_maior_cota = Collections.max(associados, Comparator.comparing(Associado::getNumeroCota));
+        associados.forEach(a -> {
+            if(a.getNumeroCota() >= a_maior_cota.getNumeroCota()) {
+                System.out.print(a);
+            }
+        });
 
         System.out.println("\nExercicio G");
         contaCorrentes= contaCorrentes.stream()
@@ -99,8 +103,13 @@ public class ContaController {
                 .sorted(Comparator.comparing(ContaPoupanca::getSaldo).reversed()).collect(Collectors.toList());
         System.out.println(contaPoupancas);
 
-        Optional maior_saldo = contas.stream().max(Comparator.comparing(Conta::getSaldo));
-        System.out.println(maior_saldo);
+        System.out.print("\n\nConta (s) com maior saldo: ");
+        Conta c_maior_saldo = Collections.max(contas, Comparator.comparing(Conta::getSaldo));
+        contas.forEach(c -> {
+            if(c.getSaldo() >= c_maior_saldo.getSaldo()) {
+                System.out.print(c);
+            }
+        });
 
     }
 }

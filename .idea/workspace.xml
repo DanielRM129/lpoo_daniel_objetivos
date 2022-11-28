@@ -35,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/daniel/IdeaProjects/Objetivo1-Avaliacao",
+    "last_opened_file_path": "/home/daniel/IdeaProjects/objetivo2",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -67,7 +67,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669586509850</updated>
-      <workItem from="1669586511755" duration="20719000" />
+      <workItem from="1669586511755" duration="23132000" />
+      <workItem from="1669654344138" duration="1650000" />
     </task>
     <servers />
   </component>
@@ -90,7 +91,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/controller/ContaController.java</url>
-          <line>14</line>
+          <line>15</line>
           <properties class="controller.ContaController" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
