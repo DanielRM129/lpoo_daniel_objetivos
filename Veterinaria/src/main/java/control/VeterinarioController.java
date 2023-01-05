@@ -93,7 +93,7 @@ public class VeterinarioController {
                     if(input.nextInt() == 0){
                         input.nextLine();
                         System.out.print("Digite o novo Endereço do veterinario: ");
-                        veterinario.setEnd_vet(input.next());
+                        veterinario.setEnd_vet(input.nextLine());
                     }
                     System.out.println("Telefone: " + veterinario.getTel_vet());
                     System.out.print("Alterar? (0-sim/1-não) ");
